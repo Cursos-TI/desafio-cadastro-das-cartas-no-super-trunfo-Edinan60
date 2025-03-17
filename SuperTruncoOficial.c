@@ -2,7 +2,7 @@
 
 int main() {
     // Variáveis para armazenar os dados das cartas
-    char estado1, estado2;
+    char estado1, estado2; 
     char codigo1[5], codigo2[5];
     char cidade1[100], cidade2[100];
     int populacao1, populacao2;
