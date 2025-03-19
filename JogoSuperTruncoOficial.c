@@ -64,12 +64,15 @@ int main() {
     printf("Numero de pontos turisticos: ");
     scanf("%d", &pontos2);
 
+    //cálculo da densidade populacional
     densidade1 = populacao1 / area1;
     densidade2 = populacao2 / area2;
 
+    //cálculo do PIB per capita
     pibper1 =  pib1 / populacao1;
     pibper2 =  pib2 / populacao2;
 
+    //cálculo do super poder
     superpodercarta1 = populacao1 + area1 + pib1 + pontos1 + pibper1;
     superpodercarta2 = populacao2 + area2 + pib2 + pontos2 + pibper2;
 
@@ -99,6 +102,7 @@ int main() {
     printf("PIB per Capita: %.11f reais\n", pibper2);
     printf("Super Poder: %.2f\n", superpodercarta2);
 
+    //comparação de dados da carta1 e carta2
     resultadopopulacao = populacao1 > populacao2;
     resultadoarea = area1 > area2;
     resultadopib = pib1 > pib2;
@@ -118,6 +122,11 @@ int main() {
     printf("PIB per Capita: %.0f\n", resultadopibperca);
     printf("Super Poder: %.0f\n", resultadosuperpoder);
 
+    if(superpodercarta1 > superpodercarta2){
+        printf("Carta 1 - São Paulo - VENCEU! %.2f\n", superpodercarta1);
+        } else {
+        printf("Carta 2 - Rio de Janeiro - VENCEU! %.2f\n", superpodercarta2);
+        }
 
 
 
